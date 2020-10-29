@@ -13,6 +13,4 @@ public class Permission {
     private String name;
 
     private String expression;
-
-
 }

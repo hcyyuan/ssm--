@@ -29,4 +29,13 @@
     select id, name, expression
     from permission
   </select>
+    <select id="selectForCount" resultType="java.lang.Integer">
+      select count(*)
+      from permission
+    </select>
+  <select id="selectForData" resultType="cn.wolfcode.rbac.domain.Permission">
+    select *
+    from permission
+    limit #{start}, #{pageSize}
+  </select>
 </mapper>
